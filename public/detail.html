@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <title>Nine</title>
+</head>
+<body>
+    <header id="header">
+        <div class="sticky-wrapper">
+            <nav class="navbar navbar-default navbar-transparent" role="navigation" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav" id="navbar-nav">
+                            <li id="position">
+                                <a href="locate.html">
+                                    <img src="img/citypoint.png" width="20" height="auto">
+                                    <span id="showCity" style="margin-right:5px;color:#000">北京</span>
+                                    <span id="city">切换城市</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="download.html">下载APP</a></li>
+                            <li><a href="seller.html">服务商</a></li>
+                            <li><a href="join.html">商家入驻</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li class="shanghu-right" style="margin-right:10px;">
+                                <a id="shanghu" class="shanghu" target="_blank" href="login.html">商家登录</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="detail"></div>
+    <footer>
+        <div class="ensure">
+            <h2>到位<i>服务</i>保障</h2>
+            <p>到位平台担保交易安全，交易未成功100%退款</p>
+        </div>
+        <div class="serve">
+            <ul>
+                <li><img src="img/quan.png"><br>服务多</li>
+                <li><img src="img/quan.png"><br>上门快</li>
+                <li><img src="img/quan.png"><br>有保障</li>
+            </ul>
+        </div>
+        <div class="city">
+            <!--定义列表：为一些定义做一些解释-->
+            <dl>
+                <dt>热门城市</dt>   <!--定义的内容-->
+                <dd>    <!--对定义的内容的描述-->
+                    <i>北京</i><i>上海</i><i>广州</i><i>深圳</i><i>成都</i><i>天津</i>
+                    <i>南京</i><i>杭州</i><i>重庆</i><i>苏州</i><i>武汉</i><i>长沙</i>
+                    <i>济南</i><i>郑州</i><i>西安</i><i>沈阳</i><i>福州</i><i>厦门</i>
+                    <i>南昌</i><i>合肥</i><i>宁波</i><i>无锡</i><i>青岛</i><i>大连</i>
+                    <i>东莞</i><i>佛山</i><i>石家庄</i><i>哈尔滨</i><i>太原</i><i>昆明</i>
+                    <i>贵阳</i><i>南宁</i><i>温州</i>
+                </dd>
+            </dl>
+        </div>
+        <div class="record">
+            <p>©2015 版权所有  到位 daoway.com 京ICP备15001471号-1</p>
+            <p>北京邻家科技有限公司  </p>
+        </div>
+    </footer>
+    <script type="text/html" id="detailTemp">
+        <div class="h2">
+            所有分类<i class="bright">&gt;</i>
+            {{service.name_b}}<i class="bright">&gt;</i>
+            <i class="cnav">{{service.name_s}}</i>
+        </div>
+        <div class="service_center">
+            <div class="centerLeft">
+                <div class="ctop">
+                    <img class="pic" src="{{service.avatar}}">
+                    <span class="spm">
+                    <i class="title">{{service.name}}</i>
+                    <i>
+                        价格&nbsp;&nbsp;<span class="newprice"><em>{{service.price}}</em>元/小时</span>
+                        <span class="oldprice">原价<span>{{service.oldPrice}}元</span></span>
+                    </i>
+                    <i style="display: block">
+                        优惠
+                        <em class="discount">首单立减10元</em>
+                    </i>
+                    <i>已售<span class="soldout">{{service.orderCount}}</span></i>
+                </span>
+                    <span class="spf">
+                    <img src="{{service.QRCode}}" width="115" height="115" alt="扫一扫">
+                    <span>扫一扫</span>
+                    <span>立即预约</span>
+                </span>
+                </div>
+                <div class="cdown">
+                    <span>服务描述</span>
+                    <p id="servicePriceDescription">
+                        {{each service.servicePriceDescription}}
+                        {{$value.split('：')[0]}}：<br>
+                        {{$value.split('：')[1]}}<br>
+                        <br/><br/>
+                        {{/each}}
+                    </p>
+                    <span>服务范围</span>
+                    <p>{{each seller.serviceArea}}
+                        {{$value}}
+                        {{/each}}</p>
+                    <span>服务时间</span>
+                    <p>{{seller.shopHours}}<span>最近可预约时间:<em>{{seller.appointment}}</em></span></p>
+                    <span>订购须知</span>
+                    <p id="orderingNotice" style="background: #fffcf1">
+                        {{each seller.orderingNotice}}
+                        {{$value}}<br>
+                        {{/each}}
+                    </p>
+                    <span>商家简介</span>
+                    <p id="serviceDescription">
+                        {{seller.serviceDescription}}
+                    </p>
+                </div>
+            </div>
+            <div class="centerRight">
+                <div class="rightct">
+                    <h3>服务商</h3>
+                    <div class="rightbox">
+                        <img src="{{seller.avatar}}">
+                        <p>{{seller.name}}</p>
+                        <p>成功接单<span>{{seller.orderCount}}</span></p>
+                        <p>接单率<span>{{seller.receiveRate}}%</span></p>
+                        <p>好评率<span>{{seller.rankRate}}%</span></p>
+                    </div>
+                </div>
+                <div class="qrcode">
+                    <img src="{{seller.QRCode_d}}">
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/detail.js"></script>
+</body>
+</html>
+
+
+

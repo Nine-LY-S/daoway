@@ -1,0 +1,113 @@
+body {
+  background-color: #fbf8f8;
+}
+
+body .s-center h2 {
+  font: bold 18px/85px 'Microsoft YaHei';
+}
+body .s-center .s-content {
+  width: 970px;
+  float: left;
+  margin-bottom: 50px;
+}
+body .s-center .s-content .card-wrap .card-content {
+  font-size: 0;
+}
+body .s-center .s-content .card-wrap .card-content a.card {
+  padding: 10px;
+  width: 232px;
+  height: 300px;
+  background: #fff;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+}
+body .s-center .s-content .card-wrap .card-content a.card.card:hover {
+  box-shadow: 5px 5px 15px 0 #ccc;
+}
+body .s-center .s-content .card-wrap .card-content a.card img {
+  width: 210px;
+  vertical-align: middle;
+}
+body .s-center .s-content .card-wrap .card-content a.card p {
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name {
+  padding: 10px 0 0;
+  height: 28px;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name img {
+  width: 17px;
+  height: 17px;
+  vertical-align: text-top;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-name b {
+  font-weight: 700;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-info {
+  color: #929292;
+  font-size: 12px;
+  padding: 15px 0;
+}
+body .s-center .s-content .card-wrap .card-content a.card .supplier-info i {
+  float: right;
+}
+body .s-center .s-content .card-wrap .s-more {
+  height: 152px;
+  line-height: 152px;
+  text-align: center;
+}
+body .s-center .s-content .card-wrap .s-more span {
+  width: 200px;
+  color: #b1b1b1;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+body .s-center .s-join {
+  width: 230px;
+  float: right;
+}
+body .s-center .s-join > img {
+  cursor: pointer;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+body .s-center .s-join .QR-code {
+  width: 230px;
+  height: 290px;
+  background: url(http://www.daoway.cn/pcimages/tuijianfuwushang_06.jpg) no-repeat;
+}
+body .s-center .s-join .QR-code img {
+  margin: 50px;
+  width: 130px;
+}
+a, a:hover {
+  color: #000;
+  font-weight: bold;
+}
+i {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.clear:after,
+.clear:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}

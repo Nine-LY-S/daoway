@@ -1,0 +1,304 @@
+body {
+  background-color: #f8f8f8;
+}
+.b_contant {
+  margin: 10px 0 50px;
+  background-color: #fff;
+}
+body .b_contant .b-seller .seller-info {
+  height: 140px;
+}
+body .b_contant .b-seller .seller-info .info-left {
+  float: left;
+  margin: 10px 0 0 20px;
+  height: 120px;
+  line-height: 150px;
+}
+body .b_contant .b-seller .seller-info .info-left h2 {
+  display: inline-block;
+  font: 700 36px 'Microsoft YaHei';
+}
+body .b_contant .b-seller .seller-info .info-left span {
+  margin-left: 10px;
+  color: #929292;
+  font-size: 14px;
+}
+body .b_contant .b-seller .seller-info .info-left span i {
+  color: #000;
+}
+body .b_contant .b-seller .seller-info .info-left span:last-of-type i {
+  color: #e94840;
+}
+body .b_contant .b-seller .seller-info .info-right {
+  float: right;
+}
+body .b_contant .b-seller .seller-info .info-right ul li {
+  width: 100px;
+  color: #333;
+  margin-top: 65px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  display: inline-block;
+}
+body .b_contant .b-seller .seller-info .info-right ul li span {
+  display: block;
+  color: #e84b47;
+}
+body .b_contant .b-seller .seller-info .info-right ul li i {
+  position: relative;
+  bottom: 12px;
+  left: 20px;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+body .b_contant .b-seller .seller-nav {
+  background-color: #000;
+}
+body .b_contant .b-seller .seller-nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+}
+body .b_contant .b-seller .seller-nav ul li.selected {
+  background-color: #424242;
+}
+body .b_contant .b-seller .seller-nav ul li a {
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+}
+.b_contant .b-seller .seller-detail {
+  background-color: #f8f8f8;
+  padding-top: 22px;
+}
+.b_contant .b-seller .seller-detail .container {
+  width: 1200px;
+  padding: 0;
+}
+body .b_contant .b-seller .seller-detail .detail-left {
+  float: left;
+  width: 960px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div {
+  background-color: #fff;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div > h3 {
+  width: 95%;
+  margin: 0 0 0 3%;
+  background-color: #fff;
+  line-height: 59px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 16px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div > h3 span {
+  color: #131313;
+  line-height: 48px;
+  display: inline-block;
+  border-bottom: 4px solid #e94840;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div > h3 i {
+  color: #121212;
+  margin-left: 15px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item {
+  overflow: hidden;
+  height: 200px;
+  border-bottom: 1px solid #e5e5e5;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item img {
+  width: 150px;
+  margin: 25px;
+  float: left;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info {
+  float: left;
+  width: 65%;
+  padding-top: 25px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info h4 {
+  font-size: 18px;
+  color: #1d1515;
+  line-height: 42px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 99%;
+  line-height: 42px;
+  font-size: 14px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info p.price-wrap {
+  margin-top: 20px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info p.price-wrap span.price {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fc545e;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info p.price-wrap span.price i {
+  font-size: 14px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .serve-info p.price-wrap span.old-price {
+  margin-left: 20px;
+  color: #898989;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item .sell-count {
+  float: right;
+  font-size: 14px;
+  color: #929292;
+  margin: 150px 60px 0 0;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.serve-list .serve-item:hover {
+  background-color: #f8f8f8;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.s-more {
+  text-align: center;
+  background-color: #f8f8f8;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.s-more span {
+  width: 200px;
+  color: #b1b1b1;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.seller-profile h2.company {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 10px 25px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.seller-profile h2 img {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.seller-profile .profile {
+  line-height: 28px;
+  color: #929292;
+  margin: 10px 25px 0;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments {
+  margin-top: 10px;
+  width: 100%;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment {
+  overflow: hidden;
+  width: 96%;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 3%;
+  padding-top: 20px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .avatar {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap {
+  float: left;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p {
+  color: #333;
+  line-height: 28px;
+  font-size: 14px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p.text {
+  line-height: 26px;
+  font-size: 16px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p.locate {
+  margin: 20px 0 15px;
+  color: #898989;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p.locate img {
+  margin-right: 5px;
+  width: 9px;
+  height: 11px;
+  vertical-align: middle;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p span:last-of-type {
+  margin-left: 10px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .comment .text-wrap p span img {
+  width: 10px;
+  margin-left: -3px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .paging-wrap {
+  height: 152px;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .paging-wrap .paging {
+  line-height: 140px;
+  font-size: 12px;
+  text-align: center;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .paging-wrap .paging .page {
+  background-color: #fff;
+  padding: 0 12px;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #e5e5e5;
+  line-height: 30px;
+  margin: 0 10px 0 12px;
+  color: #121212;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .paging-wrap .paging .page.un-able {
+  color: #e94840 !important;
+}
+body .b_contant .b-seller .seller-detail .detail-left > div.comments .paging-wrap .paging .page.checked {
+  color: #fff;
+  background-color: #fe454a;
+}
+body .b_contant .b-seller .seller-detail .detail-right {
+  width: 230px;
+  float: right;
+}
+body .b_contant .b-seller .seller-detail .detail-right > img {
+  cursor: pointer;
+}
+body .b_contant .b-seller .seller-detail .detail-right .QR-code {
+  width: 230px;
+  height: 290px;
+  margin-top: 10px;
+  background: url(http://www.daoway.cn/pcimages/tuijianfuwushang_06.jpg) no-repeat;
+}
+body .b_contant .b-seller .seller-detail .detail-right .QR-code img {
+  margin: 50px;
+  width: 130px;
+}
+body .b_contant .b-seller .seller-detail .detail-right .QR-code.code-2 {
+  margin-top: 0;
+  background: url(http://www.daoway.cn/pcimages/fuwushang2_07.jpg) no-repeat;
+}
+
+
+.clear:after,
+.clear:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+.btn {
+  display: inline-block;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.btn-danger {
+  background-color: #e94840;
+  color: #fff;
+}

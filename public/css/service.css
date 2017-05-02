@@ -1,0 +1,279 @@
+body {background: #f8f8f8;}
+/*--------------------------h2-------------------------*/
+.h2 {
+    width: 1200px;
+    line-height: 85px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bright {
+    margin: 0 10px;
+    font-weight: normal;
+}
+.cnav {
+    color: #fb4e55;
+}
+/*--------------------------navcenter-------------------------*/
+.navcenter, .listdiv {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    background: #fff;
+}
+.navcenter div {
+    line-height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.navcenter div span {
+    font-size: 16px;
+    padding: 0 10px;
+    float: left;
+    cursor: pointer;
+}
+.navcenter div span.fist {
+    color: #a9a9a9;
+    width: 100px;
+    text-align: right;
+}
+.navcenter .list1 div {
+    float: right;
+    padding-right: 6%;
+    margin-right: 2%;
+    width: 88%;
+}
+.navcenter span.red {
+    color: #e84b47;
+}
+.navcenter .list1 div span:hover {
+    color: #fc545e;
+}
+/*--------------------------service-------------------------*/
+.service_center {
+    width: 1200px;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+/*-------------左边-----------*/
+.centerLeft {
+    width: 960px;
+    float: left;
+    margin-bottom: 50px;
+    background: #fff;
+}
+.centerLeft h3 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #eaeaea;
+    border-bottom: none;
+    font-size: 14px;
+    margin: 0;
+}
+.top i {
+    margin: 0 20px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.top i.activity {
+    border-bottom: 4px solid #fb474f;
+    color: #fb474f;
+}
+.spanRight {
+    float: right;
+}
+.spanRight i {
+    font-size: 12px;
+}
+.spanRight i.count {
+    color: #e84b47;
+}
+.spanRight i.pageup, .spanRight i.pagedown {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    margin-left: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*box*/
+.boxtab {
+
+}
+.ctop {
+    height: 200px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+.pic {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #e5e5e5;
+    margin: 30px;
+    float: left;
+}
+.spm {
+    float: left;
+    display: block;
+    padding-top: 25px;
+}
+.spm i {
+    display: block;
+    line-height: 42px;
+    height: 42px;
+    color: #929292;
+    font-size: 16px;
+}
+.spm i.title {
+    font-size: 20px;
+    color: black;
+}
+.spm i span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.spm i span.newprice {
+    color: #fc545e;
+    font-weight: bold;
+}
+.spm i span.oldprice {
+    margin-left: 30px;
+}
+.spm i span.oldprice span {
+    text-decoration: line-through;
+}
+.spm i span em {
+    font-size: 20px;
+    font-style: normal;
+}
+.spm i span img {
+    margin-right: 5px;
+    width: 18px;
+    height: 17px;
+}
+.spf {
+    float: right;
+    margin: 20px 40px 0 0;
+}
+.quickly {
+    width: 66px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #ff7871;
+    line-height: 16px;
+    font-size: 12px;
+    border-radius: 6px;
+    color: #ff7871;
+}
+.quickly i {
+    display: block;
+    height: 16px;
+}
+.quickly i:nth-child(1) {
+    background: #ff7871;
+    color: #fff;
+}
+/*分页*/
+.paging {
+    background: #f8f8f8;
+    text-align: center;
+}
+.paging a {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e5e5e5;
+    margin: 50px 5px;
+    background: #fff;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+.spanRight i.greycolor, .paging a.greycolor {
+    color: #929292;
+}
+.paging div {
+    display: inline-block;
+}
+.paging a.num {
+    width: 32px;
+}
+.paging a.num:hover,
+.paging a.acv{
+    background: #fe454a;
+    color: #fff;
+}
+/*-------------右边-----------*/
+.centerRight {
+    width: 230px;
+    float: right;
+}
+.rightct {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.centerRight h3 {
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+}
+.rightbox {
+    height: 200px;
+}
+.rightbox img {
+    width: 70px;
+    height: 70px;
+    margin:30px 0 10px;
+}
+.rightbox p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.rightbox p.pline {
+    border-bottom: 1px solid #e5e5e5;
+    width: 90%;
+    margin: 0 auto;
+    height: 48px;
+    line-height: 48px;
+    color: #929292;
+
+}
+.rightbox:last-child p.pline {
+    border: none;
+}
+.rightbox p.pline span {
+    font-size: 14px;
+}
+.rightbox p.pline span:nth-child(1) {
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

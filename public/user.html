@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nine</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar-yellow {
+            background: #337ab7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+        .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .header .navbar-header .logo {
+            display: inline-block;
+            margin: 8px 0;
+        }
+        .header .navbar-header img {
+            width: 204px;
+        }
+        .header .navbar-right li {
+            border-left: 1px #296da7 solid;
+        }
+        .header .navbar-right a {
+            color: #fff;
+        }
+        .header .navbar-right i {
+            margin-right: 5px;
+        }
+        .content1 {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 100px 0 20px 0;
+        }
+        .content1 h1 {
+            text-align: left;
+        }
+        .leixing {
+            margin: 60px auto;
+            height: 300px;
+        }
+        .leixing li {
+            float: left;
+            height: 300px;
+            width: 44%;
+            padding: 60px 0 0 2%;
+            text-align: left;
+            background: #f8f8f8;
+            border: 1px solid #e5e5e5;
+        }
+        .leixing li:nth-of-type(2) {
+            margin-left: 7%;
+        }
+        .leixing li span {
+            float: right;
+            width: 66%;
+            display: inline-block;
+            margin-right: 3%;
+            margin-top: 20px;
+        }
+        .p1 {
+            font-weight: 700;
+            line-height: 26px;
+            font-size: 16px;
+        }
+        .p2 {
+            font-size: 14px;
+            line-height: 24px;
+            color: #999;
+            margin-top: 10px;
+        }
+        .nextbtn {
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            height: 36px;
+            line-height: 36px;
+            background: #337ab7;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .sea {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="header">
+        <nav class="navbar navbar-yellow navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="logo"><img src="img/houtai-logo-white.png"></span>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div style="position: absolute; top:20px; right: 40px; z-index: 999;" class="col-md-2 alert alert-dismissible fade in ng-binding alert- ng-hide" role="alert">
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#/user" class="ng-binding" id="username"></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-power-off"></i>退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content1">
+        <h1>请选择开店类型</h1>
+        <ul class="leixing">
+            <li>
+                <img src="img/imgtu1.png" width="30%" height="auto">
+                <span>
+                <p class="p1">服务店铺</p>
+                <p class="p2">适用家政、按摩、维修等服务提供商个人、公司均可申请</p>
+            </span>
+                <button class="nextbtn">下一步</button>
+            </li>
+            <li>
+                <img src="img/imgtu2.png" width="30%" height="auto">
+                <span>
+                <p class="p1">超市店铺</p>
+                <p class="p2">适用想开超市或已开超市店主个人、公司均可申请要求送货时间8-28分钟</p>
+            </span>
+                <button class="nextbtn">下一步</button>
+            </li>
+        </ul>
+        <p style="clear: both; height: 50px"></p>
+        <p class="sea"><img style="vertical-align: middle; margin-right: 10px" src="img/pc11_11.png" width="26" height="25">
+            说明：超市店主可获得更多的功能使用权限</p>
+    </div>
+    <div class="errorMsgDiv ng-binding ng-scope"></div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var username = GetQueryString("username");
+        $('#username').html(username);
+    });
+    // 获得参数对应的值
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r) {
+            return decodeURI(r[2]);
+        } else {
+            return null;
+        }
+    }
+</script>
+</body>
+</html>

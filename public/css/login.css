@@ -1,0 +1,93 @@
+/*-------------------------------登录------------------------------------*/
+.login,.register,.forgetpwd {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 13%;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+}
+.login h2,.register h2,.forgetpwd h2 {
+    background: url(../img/houtai-logo.png) center no-repeat;
+    height: 70px;
+    line-height: 70px;
+    text-indent: -9999px;
+    background-size: 290px;
+    margin-top: 0;
+}
+.login .icon-1 {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+.login .icon-2 {
+    border-top-left-radius: 0;
+}
+.login input[type="text"] {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+.login input[type="password"] {
+    border-top-right-radius: 0;
+}
+.login .form-control {
+    height: auto;
+    padding: 15px;
+    font-size: 16px;
+}
+.alert span{font-size: 12px}
+.btn {
+    outline: none!important;
+}
+.glyphicon {
+    font-size: 14px;
+}
+.alert-dismissible .close {
+    top: 3px;
+}
+.full {
+    padding: 20px;
+}
+.full a:first-child {
+    float: left;
+}
+.full a:last-child {
+    float: right;
+}
+/*-------------------------------注册------------------------------------*/
+.control-group input {
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.control-group .input-group {
+    margin-bottom: 10px;
+}
+.control-group #codeImg {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.control-group .input-group-addon {
+    cursor: pointer;
+}
+.checkbox {
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+.checkbox a {
+    font-size: 12px;
+    vertical-align: text-top;
+}
+.register .full a {
+    display: inline-block;
+    margin-left: 60px;
+    float: none;
+    font-size: 16px;
+}
+/*-------------------------------忘记密码------------------------------------*/
+.forgetpwd .full a {
+    display: inline-block;
+    margin-left: 113px;
+    float: none;
+    font-size: 16px;
+}

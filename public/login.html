@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Nine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="content">
+                <h2>到位商家管理后台</h2>
+                <div class="input-group">
+                    <div class="input-group-addon icon-1">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <input class="form-control" id="username" type="text" placeholder="输入昵称或手机号"  maxlength="20" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon icon-2">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </div>
+                    <input class="form-control" id="password" onfocus="this.type='password'" placeholder="输入密码" maxlength="20" minlength="6" autocomplete="off">
+                </div>
+                <br>
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert" id="alert" style="display: none">
+                <button type="button" class="close">×</button>
+                <span id="text"></span>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" id="logining">登录</button>
+            <div class="full">
+                <a href="forgetpwd.html">忘记密码</a>
+                <a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

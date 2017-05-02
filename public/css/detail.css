@@ -1,0 +1,101 @@
+body{background: #fbf8f8;}
+/*------------------------------左边----------------------------*/
+.centerLeft {
+    background: #fbf8f8;
+}
+.ctop {
+    border-top: 1px solid #e5e5e5;
+    background: #fff;
+}
+.spm i {
+    color: #000;
+}
+.spm i span.oldprice {
+    color: #929292;
+}
+.spm i .discount {
+    display: inline-block;
+    border: 1px solid #fb474f;
+    color: #fb474f;
+    font-size: 12px;
+    padding: 0 6px;
+    border-radius: 6px;
+    font-style: normal;
+    margin-left: 10px;
+    height: 24px;
+    line-height: 24px;
+}
+.spm i .soldout {
+    color: #fb474f;
+    margin-left: 10px;
+}
+.spf span {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.spf span:last-child {
+    color: #fb474f;
+}
+.cdown {
+    /*clear: both;*/
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+.cdown>span {
+    border-bottom: 3px solid #fb474f;
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 82px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.cdown p {
+    line-height: 24px;
+    margin: 15px 0 5px;
+    font-size: 16px;
+}
+.cdown p span {
+    margin-left: 20px;
+    font-size: 16px;
+}
+.cdown p span em {
+    color: #fb474f;
+    font-size: 16px;
+    font-style: normal;
+}
+/*------------------------------右边----------------------------*/
+.rightbox {
+    height: 255px;
+}
+.rightbox p:not(:first-of-type) {
+    text-align: left;
+    padding: 0 10px;
+    line-height: 36px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.rightbox p span {
+    float: right;
+    color: #fb474f;
+}
+.qrcode {
+    width: 230px;
+    height: 290px;
+    background: url(../img/tuijianfuwushang_06.jpg) no-repeat center;
+    margin-top: 10px;
+}
+.qrcode img {
+    margin: 50px 0 0 50px;
+    width: 130px;
+    height: auto;
+}
+
+
+

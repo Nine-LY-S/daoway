@@ -1,0 +1,37 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.a_content .banner {
+  width: 100%;
+  height: 240px;
+  background: url(http://www.daoway.cn/pcimages/aboutbanner.jpg) no-repeat center center;
+  margin: 0 auto;
+}
+.a_content .about-wrap {
+  width: 1180px;
+  box-sizing: border-box;
+  margin: 26px auto;
+  border: 1px solid #e5e5e5;
+  padding: 0 20px;
+  background: #fff;
+}
+.a_content .about-wrap h3 {
+  border-bottom: 4px solid #e84b47;
+  width: 96px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 20px 0;
+}
+.a_content .about-wrap .text {
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+.a_content .about-wrap .text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #929292;
+  line-height: 28px;
+  margin: 5px 0 27px;
+}

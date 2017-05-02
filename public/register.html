@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Nine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="register">
+            <div class="content">
+                <h2>到位商家管理后台</h2>
+                <div class="control-group">
+                    <input class="form-control" placeholder="请输入手机号" id="inputTel" onkeyup="value=value.replace(/\D/g,'')" maxlength="11">
+                    <div class="input-group">
+                        <div id="codeImg">
+                            <canvas id="verifyCanvas" width="203px" height="50px" style="cursor: pointer;"></canvas>
+                        </div>
+                        <input class="form-control" placeholder="请输入图片中的字符串" maxlength="4" id="putCodeImg"  autocomplete="off">
+                        <span class="input-group-addon" id="getCode">获取验证码</span>
+                    </div>
+                    <input class="form-control" placeholder="请输入验证码" id="putCode" maxlength="4"  onkeyup="value=value.replace(/\D/g,'')" autocomplete="off">
+                    <input class="form-control" placeholder="请输入密码" id="password"  onfocus="this.type='password'" minlength="6" maxlength="20" autocomplete="off">
+                </div>
+                <br>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="vehicle" value="car" checked id="checked">
+                    <a href="#" target="_Blank">您确认并同意到位用户协议</a>
+                </label>
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert" id="alert" style="display: none">
+                <button type="button" class="close">×</button>
+                <span id="text"></span>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block"  id="register">注册</button>
+            <div class="full">
+                <a href="./login.html">已有账户？登录</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/gVerify.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

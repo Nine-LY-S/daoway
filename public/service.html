@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <title>Nine</title>
+</head>
+<body>
+    <header id="header">
+        <div class="sticky-wrapper">
+            <nav class="navbar navbar-default navbar-transparent" role="navigation" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav" id="navbar-nav">
+                            <li id="position">
+                                <a href="locate.html">
+                                    <img src="img/citypoint.png" width="20" height="auto">
+                                    <span id="showCity" style="margin-right:5px;color:#000">北京</span>
+                                    <span id="city">切换城市</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="download.html">下载APP</a></li>
+                            <li><a href="seller.html">服务商</a></li>
+                            <li><a href="join.html">商家入驻</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li class="shanghu-right" style="margin-right:10px;">
+                                <a id="shanghu" class="shanghu" target="_blank" href="login.html">商家登录</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="service"></div>
+    <footer>
+        <div class="ensure">
+            <h2>到位<i>服务</i>保障</h2>
+            <p>到位平台担保交易安全，交易未成功100%退款</p>
+        </div>
+        <div class="serve">
+            <ul>
+                <li><img src="img/quan.png"><br>服务多</li>
+                <li><img src="img/quan.png"><br>上门快</li>
+                <li><img src="img/quan.png"><br>有保障</li>
+            </ul>
+        </div>
+        <div class="city">
+            <!--定义列表：为一些定义做一些解释-->
+            <dl>
+                <dt>热门城市</dt>   <!--定义的内容-->
+                <dd>    <!--对定义的内容的描述-->
+                    <i>北京</i><i>上海</i><i>广州</i><i>深圳</i><i>成都</i><i>天津</i>
+                    <i>南京</i><i>杭州</i><i>重庆</i><i>苏州</i><i>武汉</i><i>长沙</i>
+                    <i>济南</i><i>郑州</i><i>西安</i><i>沈阳</i><i>福州</i><i>厦门</i>
+                    <i>南昌</i><i>合肥</i><i>宁波</i><i>无锡</i><i>青岛</i><i>大连</i>
+                    <i>东莞</i><i>佛山</i><i>石家庄</i><i>哈尔滨</i><i>太原</i><i>昆明</i>
+                    <i>贵阳</i><i>南宁</i><i>温州</i>
+                </dd>
+            </dl>
+        </div>
+        <div class="record">
+            <p>©2015 版权所有  到位 daoway.com 京ICP备15001471号-1</p>
+            <p>北京邻家科技有限公司  </p>
+        </div>
+    </footer>
+    <script type="text/html" id="serviceTemp">
+        <div class="h2">
+            所有分类<i class="bright">&gt;</i>
+            <i class="cnav">{{category.name}}</i><i class="bright">&gt;</i>
+        </div>
+        <div class="navcenter">
+            <div class="list1">
+                <span class="fist">分类</span>
+                <div>
+                    <span class="clickAble {{!family?'red':''}}" data-family="0">全部</span>
+                    {{each category.genre g i}}
+                    <span class="clickAble {{g.type == family?'red':''}}"  data-family="{{g.type}}">{{g.name}}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="service_center">
+            <div class="centerLeft">
+                <h3>
+                <span class="top">
+                    <i id="recommend" class="{{sort_by == 'recommend'?'activity':''}}">推荐排序</i>
+                    <i id="orderCount" class="{{sort_by == 'orderCount'?'activity':''}}">销量高<img src="img/fuwu_down2.jpg" width="12" height="7"></i>
+                    <i id="rankRate" class="{{sort_by == 'rankRate'?'activity':''}}">好评多<img src="img/fuwu_down2.jpg" width="12" height="7"></i>
+                    <i id="fastTime" class="{{sort_by == 'fastTime'?'activity':''}}">上门快<img src="img/fuwu_down2.jpg" width="12" height="7"></i>
+                    <i id="price" class="{{sort_by == 'price'?'activity':''}}">价格低<img src="img/fuwu_down2.jpg" width="12" height="7"></i>
+                </span>
+                    <span class="spanRight">
+                    <i id="page" class="count">{{page}}</i>/<i id="pages">{{pages}}</i>
+                    <i class="pageup {{page==1?'greycolor':''}}">上一页</i>
+                    <i class="pagedown  {{page==pages?'greycolor':''}}">下一页</i>
+                </span>
+                </h3>
+                <div class="boxtab">
+                    {{each service ser i}}
+                    {{if i >= (page-1)*10 && i < page*10}}
+                    <a href="detail.html?query={{category.type}}&detailId={{ser.detailId}}&sellerID={{ser.sellerID}}" target="_blank">
+                        <div class="ctop">
+                            <img class="pic" src="{{ser.avatar}}">
+                            <span class="spm">
+                            <i class="title">{{ser.name}}</i>
+                            <i>{{ser.servicePriceDescription[0]}}</i>
+                            <i>
+                                <span class="newprice"><em>{{ser.price}}</em>元/小时</span>
+                                <span class="oldprice"><span>{{ser.oldPrice}}元</span></span>
+                            </i>
+                            <i>
+                                <span><img src="img/home1.png">{{ser.seller}}</span>
+                                <span>已售{{ser.orderCount}}</span>
+                                <span>好评{{ser.rankRate}}%</span>
+                            </i>
+                        </span>
+                            <span class="spf quickly">
+                        <i>最快上门</i>
+                        <i>{{ser.fastTime}}小时</i>
+                    </span>
+                        </div>
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <div class="paging">
+                    <a class="pageup {{page==1?'greycolor':''}}">&lt;上一页</a>
+                    <div id="showPage">
+                        {{if page < 9}}
+                        <% for(var i = 1; i < (pages >= 10?10:pages+1); i++){ %>
+                        <a class="num {{page == i?'acv':''}}">{{i}}</a>
+                        <% } %>
+                        {{pages>9?'...':''}}
+                        {{else}}
+                        <% for(var i = 1; i < 4; i++){ %>
+                        <a class="num {{page == i?'acv':''}}">{{i}}</a>
+                        {{i==3?'...':''}}
+                        <% } %>
+                        <% for(var i = (page-2); i < +page + 4; i++){ %>
+                        {{if i <=pages}}
+                        <a class="num {{page == i?'acv':''}}">{{i}}</a>
+                        {{/if}}
+                        <% } %>
+                        {{(pages>9&&pages>+page+3)?'...':''}}
+                        {{/if}}
+                    </div>
+                    <a class="pagedown  {{page==pages?'greycolor':''}}">下一页&gt;</a>
+                </div>
+            </div>
+            <div class="centerRight">
+                <div class="rightct">
+                    <h3>服务商</h3>
+                    {{each sellers sel i}}
+                    <div class="rightbox">
+                        <img src="{{sel.avatar}}">
+                        <p>{{sel.name}}</p>
+                        <p class="pline">
+                            <span>已成功接单{{sel.orderCount}}</span>
+                            <span>好评{{sel.rankRate}}%</span>
+                        </p>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+</body>
+</html>

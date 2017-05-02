@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Nine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forgetpwd">
+            <div class="content">
+                <h2>到位商家管理后台</h2>
+                <div class="control-group">
+                    <input class="form-control" placeholder="请输入手机号" id="inputTel" onkeyup="value=value.replace(/\D/g,'')" maxlength="11" autocomplete="off">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="请输入验证码" maxlength="4" id="putCode" onkeyup="value=value.replace(/\D/g,'')" autocomplete="off">
+                        <span class="input-group-addon" id="getCode">获取验证码</span>
+                    </div>
+                    <input class="form-control" placeholder="请输入新密码" id="password" onfocus="this.type='password'" minlength="6" maxlength="20" autocomplete="off">
+                </div>
+                <br>
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert" id="alert" style="display: none">
+                <button type="button" class="close">×</button>
+                <span id="text"></span>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block" id="reset">确认重置</button>
+            <div class="full">
+                <a href="login.html">返回</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/forgetpwd.js"></script>
+</body>
+</html>

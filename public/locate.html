@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>locate</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/locate.css">
+</head>
+<body>
+  <header id="header">
+    <div class="sticky-wrapper">
+      <nav class="navbar navbar-default navbar-transparent" role="navigation" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav" id="navbar-nav">
+              <li id="position" class="active">
+                <a href="#">
+                  <img src="img/citypoint.png" width="20" height="auto">
+                  <span id="showCity" style="margin-right:5px;color:#000">北京</span>
+                  <span id="city">切换城市</span>
+                </a>
+              </li>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="download.html">下载APP</a></li>
+              <li><a href="seller.html">服务商</a></li>
+              <li><a href="join.html">商家入驻</a></li>
+              <li><a href="about.html">关于我们</a></li>
+              <li class="shanghu-right" style="margin-right:10px;">
+                <a id="shanghu" class="shanghu" target="_blank" href="login.html">商家登录</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<div class="container">
+  <div class="city-nav">
+    <div class="hot-city">
+      <h3>热门城市</h3>
+      <ul class="hot-city-list">
+        <li class="classify_city">北京</li>
+        <li class="classify_city">上海</li>
+        <li class="classify_city">深圳</li>
+        <li class="classify_city">广州</li>
+        <li class="classify_city">成都</li>
+        <li class="classify_city">天津</li>
+        <li class="classify_city">杭州</li>
+        <li class="classify_city">南京</li>
+        <li class="classify_city">重庆</li>
+        <li class="classify_city">苏州</li>
+        <li class="classify_city">武汉</li>
+        <li class="classify_city">长沙</li>
+        <li class="classify_city">郑州</li>
+        <li class="classify_city">济南</li>
+        <li class="classify_city">西安</li>
+        <li class="classify_city">沈阳</li>
+        <li class="classify_city">福州</li>
+        <li class="classify_city">厦门</li>
+        <li class="classify_city">南昌</li>
+        <li class="classify_city">合肥</li>
+        <li class="classify_city">宁波</li>
+        <li class="classify_city">无锡</li>
+        <li class="classify_city">青岛</li>
+        <li class="classify_city">大连</li>
+        <li class="classify_city">东莞</li>
+        <li class="classify_city">佛山</li>
+        <li class="classify_city">石家庄</li>
+        <li class="classify_city">哈尔滨</li>
+        <li class="classify_city">太原</li>
+        <li class="classify_city">昆明</li>
+        <li class="classify_city">南宁</li>
+        <li class="classify_city">温州</li>
+      </ul>
+    </div>
+    <div class="city-select">
+      <h3>快速查找城市</h3>
+      <ul class="letter-list">
+        <li class="selected">A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>W</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+      </ul>
+    </div>
+  </div>
+  <div class="nav-holder"></div>
+
+  <div class="cities" id="group-a">
+    <h3>A</h3>
+    <ul class="city-list">
+      <li class="classify_city">鞍山</li>
+      <li class="classify_city">安顺</li>
+      <li class="classify_city">安庆</li>
+      <li class="classify_city">安阳</li>
+      <li class="classify_city">安康</li>
+      <li class="classify_city">阿拉善盟</li>
+    </ul>
+  </div>
+  <div class="cities" id="group-b">
+    <h3>B</h3>
+    <ul class="city-list">
+      <li class="classify_city">北京</li>
+      <li class="classify_city">包头</li>
+      <li class="classify_city">白银</li>
+      <li class="classify_city">蚌埠</li>
+      <li class="classify_city">宝鸡</li>
+      <li class="classify_city">保山</li>
+      <li class="classify_city">毕节</li>
+      <li class="classify_city">保定</li>
+      <li class="classify_city">白山</li>
+      <li class="classify_city">百色</li>
+      <li class="classify_city">白城</li>
+      <li class="classify_city">巴音郭楞蒙古自治州</li>
+      <li class="classify_city">滨州</li>
+      <li class="classify_city">北海</li>
+      <li class="classify_city">本溪</li>
+      <li class="classify_city">巴中</li>
+    </ul>
+  </div>
+  <div class="cities" id="group-c">
+    <h3>C</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">成都</li>
+
+      <li class="classify_city">重庆</li>
+
+      <li class="classify_city">长沙</li>
+
+      <li class="classify_city">长春</li>
+
+      <li class="classify_city">长治</li>
+
+      <li class="classify_city">赤峰</li>
+
+      <li class="classify_city">常州</li>
+
+      <li class="classify_city">滁州</li>
+
+      <li class="classify_city">常德</li>
+
+      <li class="classify_city">郴州</li>
+
+      <li class="classify_city">承德</li>
+
+      <li class="classify_city">沧州</li>
+
+      <li class="classify_city">崇左</li>
+
+      <li class="classify_city">朝阳</li>
+
+      <li class="classify_city">池州</li>
+
+      <li class="classify_city">潮州</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-d">
+    <h3>D</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">大连</li>
+
+      <li class="classify_city">大同</li>
+
+      <li class="classify_city">德阳</li>
+
+      <li class="classify_city">东营</li>
+
+      <li class="classify_city">丹东</li>
+
+      <li class="classify_city">大庆</li>
+
+      <li class="classify_city">达州</li>
+
+      <li class="classify_city">东莞</li>
+
+      <li class="classify_city">定西</li>
+
+      <li class="classify_city">德州</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-e">
+    <h3>E</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">鄂尔多斯</li>
+
+      <li class="classify_city">鄂州</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-f">
+    <h3>F</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">福州</li>
+
+      <li class="classify_city">佛山</li>
+
+      <li class="classify_city">抚顺</li>
+
+      <li class="classify_city">阜阳</li>
+
+      <li class="classify_city">抚州</li>
+
+      <li class="classify_city">防城港</li>
+
+      <li class="classify_city">阜新</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-g">
+    <h3>G</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">广州</li>
+
+      <li class="classify_city">贵阳</li>
+
+      <li class="classify_city">桂林</li>
+
+      <li class="classify_city">固原</li>
+
+      <li class="classify_city">贵港</li>
+
+      <li class="classify_city">赣州</li>
+
+      <li class="classify_city">广元</li>
+
+      <li class="classify_city">广安</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-h">
+    <h3>H</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">杭州</li>
+
+      <li class="classify_city">合肥</li>
+
+      <li class="classify_city">海口</li>
+
+      <li class="classify_city">哈尔滨</li>
+
+      <li class="classify_city">呼和浩特</li>
+
+      <li class="classify_city">海东地区</li>
+
+      <li class="classify_city">黄石</li>
+
+      <li class="classify_city">邯郸</li>
+
+      <li class="classify_city">鹤岗</li>
+
+      <li class="classify_city">衡阳</li>
+
+      <li class="classify_city">鹤壁</li>
+
+      <li class="classify_city">湖州</li>
+
+      <li class="classify_city">呼伦贝尔</li>
+
+      <li class="classify_city">汉中</li>
+
+      <li class="classify_city">河池</li>
+
+      <li class="classify_city">淮安</li>
+
+      <li class="classify_city">惠州</li>
+
+      <li class="classify_city">黑河</li>
+
+      <li class="classify_city">葫芦岛</li>
+
+      <li class="classify_city">淮南</li>
+
+      <li class="classify_city">衡水</li>
+
+      <li class="classify_city">淮北</li>
+
+      <li class="classify_city">黄冈</li>
+
+      <li class="classify_city">贺州</li>
+
+      <li class="classify_city">怀化</li>
+
+      <li class="classify_city">黄山</li>
+
+      <li class="classify_city">河源</li>
+
+      <li class="classify_city">菏泽</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-j">
+    <h3>J</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">济南</li>
+
+      <li class="classify_city">景德镇</li>
+
+      <li class="classify_city">金昌</li>
+
+      <li class="classify_city">吉林</li>
+
+      <li class="classify_city">鸡西</li>
+
+      <li class="classify_city">焦作</li>
+
+      <li class="classify_city">九江</li>
+
+      <li class="classify_city">嘉兴</li>
+
+      <li class="classify_city">晋城</li>
+
+      <li class="classify_city">荆州</li>
+
+      <li class="classify_city">锦州</li>
+
+      <li class="classify_city">江门</li>
+
+      <li class="classify_city">金华</li>
+
+      <li class="classify_city">晋中</li>
+
+      <li class="classify_city">荆门</li>
+
+      <li class="classify_city">吉安</li>
+
+      <li class="classify_city">佳木斯</li>
+
+      <li class="classify_city">酒泉</li>
+
+      <li class="classify_city">济宁</li>
+
+      <li class="classify_city">嘉峪关</li>
+
+      <li class="classify_city">揭阳</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-k">
+    <h3>K</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">昆明</li>
+
+      <li class="classify_city">克拉玛依</li>
+
+      <li class="classify_city">开封</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-l">
+    <h3>L</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">兰州</li>
+
+      <li class="classify_city">拉萨</li>
+
+      <li class="classify_city">柳州</li>
+
+      <li class="classify_city">洛阳</li>
+
+      <li class="classify_city">六盘水</li>
+
+      <li class="classify_city">辽源</li>
+
+      <li class="classify_city">丽江</li>
+
+      <li class="classify_city">乐山</li>
+
+      <li class="classify_city">连云港</li>
+
+      <li class="classify_city">龙岩</li>
+
+      <li class="classify_city">临沧</li>
+
+      <li class="classify_city">辽阳</li>
+
+      <li class="classify_city">来宾</li>
+
+      <li class="classify_city">莱芜</li>
+
+      <li class="classify_city">廊坊</li>
+
+      <li class="classify_city">娄底</li>
+
+      <li class="classify_city">六安</li>
+
+      <li class="classify_city">临汾</li>
+
+      <li class="classify_city">吕梁</li>
+
+      <li class="classify_city">陇南</li>
+
+      <li class="classify_city">丽水</li>
+
+      <li class="classify_city">临沂</li>
+
+      <li class="classify_city">聊城</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-m">
+    <h3>M</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">马鞍山</li>
+
+      <li class="classify_city">绵阳</li>
+
+      <li class="classify_city">茂名</li>
+
+      <li class="classify_city">牡丹江</li>
+
+      <li class="classify_city">梅州</li>
+
+      <li class="classify_city">眉山</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-n">
+    <h3>N</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">南京</li>
+
+      <li class="classify_city">南昌</li>
+
+      <li class="classify_city">宁波</li>
+
+      <li class="classify_city">南宁</li>
+
+      <li class="classify_city">那曲地区</li>
+
+      <li class="classify_city">南通</li>
+
+      <li class="classify_city">南平</li>
+
+      <li class="classify_city">南充</li>
+
+      <li class="classify_city">宁德</li>
+
+      <li class="classify_city">南阳</li>
+
+      <li class="classify_city">内江</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-p">
+    <h3>P</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">莆田</li>
+
+      <li class="classify_city">萍乡</li>
+
+      <li class="classify_city">平顶山</li>
+
+      <li class="classify_city">普洱</li>
+
+      <li class="classify_city">平凉</li>
+
+      <li class="classify_city">盘锦</li>
+
+      <li class="classify_city">攀枝花</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-q">
+    <h3>Q</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">青岛</li>
+
+      <li class="classify_city">曲靖</li>
+
+      <li class="classify_city">齐齐哈尔</li>
+
+      <li class="classify_city">秦皇岛</li>
+
+      <li class="classify_city">钦州</li>
+
+      <li class="classify_city">泉州</li>
+
+      <li class="classify_city">庆阳</li>
+
+      <li class="classify_city">七台河</li>
+
+      <li class="classify_city">清远</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-r">
+    <h3>R</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">日照</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-s">
+    <h3>S</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">上海</li>
+
+      <li class="classify_city">深圳</li>
+
+      <li class="classify_city">苏州</li>
+
+      <li class="classify_city">沈阳</li>
+
+      <li class="classify_city">石家庄</li>
+
+      <li class="classify_city">三亚</li>
+
+      <li class="classify_city">石嘴山</li>
+
+      <li class="classify_city">四平</li>
+
+      <li class="classify_city">三明</li>
+
+      <li class="classify_city">汕头</li>
+
+      <li class="classify_city">十堰</li>
+
+      <li class="classify_city">双鸭山</li>
+
+      <li class="classify_city">邵阳</li>
+
+      <li class="classify_city">绍兴</li>
+
+      <li class="classify_city">朔州</li>
+
+      <li class="classify_city">松原</li>
+
+      <li class="classify_city">宿州</li>
+
+      <li class="classify_city">绥化</li>
+
+      <li class="classify_city">商洛</li>
+
+      <li class="classify_city">上饶</li>
+
+      <li class="classify_city">韶关</li>
+
+      <li class="classify_city">宿迁</li>
+
+      <li class="classify_city">遂宁</li>
+
+      <li class="classify_city">三门峡</li>
+
+      <li class="classify_city">随州</li>
+
+      <li class="classify_city">商丘</li>
+
+      <li class="classify_city">汕尾</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-t">
+    <h3>T</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">天津</li>
+
+      <li class="classify_city">太原</li>
+
+      <li class="classify_city">唐山</li>
+
+      <li class="classify_city">铜川</li>
+
+      <li class="classify_city">天水</li>
+
+      <li class="classify_city">通辽</li>
+
+      <li class="classify_city">通化</li>
+
+      <li class="classify_city">铜仁</li>
+
+      <li class="classify_city">台州</li>
+
+      <li class="classify_city">泰安</li>
+
+      <li class="classify_city">泰州</li>
+
+      <li class="classify_city">铜陵</li>
+
+      <li class="classify_city">铁岭</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-w">
+    <h3>W</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">武汉</li>
+
+      <li class="classify_city">无锡</li>
+
+      <li class="classify_city">乌鲁木齐</li>
+
+      <li class="classify_city">温州</li>
+
+      <li class="classify_city">芜湖</li>
+
+      <li class="classify_city">乌海</li>
+
+      <li class="classify_city">吴忠</li>
+
+      <li class="classify_city">梧州</li>
+
+      <li class="classify_city">渭南</li>
+
+      <li class="classify_city">武威</li>
+
+      <li class="classify_city">潍坊</li>
+
+      <li class="classify_city">威海</li>
+
+      <li class="classify_city">乌兰察布</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-x">
+    <h3>X</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">西安</li>
+
+      <li class="classify_city">厦门</li>
+
+      <li class="classify_city">西宁</li>
+
+      <li class="classify_city">襄阳</li>
+
+      <li class="classify_city">湘潭</li>
+
+      <li class="classify_city">咸阳</li>
+
+      <li class="classify_city">徐州</li>
+
+      <li class="classify_city">新余</li>
+
+      <li class="classify_city">邢台</li>
+
+      <li class="classify_city">新乡</li>
+
+      <li class="classify_city">忻州</li>
+
+      <li class="classify_city">兴安盟</li>
+
+      <li class="classify_city">锡林郭勒盟</li>
+
+      <li class="classify_city">孝感</li>
+
+      <li class="classify_city">咸宁</li>
+
+      <li class="classify_city">许昌</li>
+
+      <li class="classify_city">信阳</li>
+
+      <li class="classify_city">宣城</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-y">
+    <h3>Y</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">银川</li>
+
+      <li class="classify_city">阳泉</li>
+
+      <li class="classify_city">玉溪</li>
+
+      <li class="classify_city">延安</li>
+
+      <li class="classify_city">玉林</li>
+
+      <li class="classify_city">岳阳</li>
+
+      <li class="classify_city">宜昌</li>
+
+      <li class="classify_city">鹰潭</li>
+
+      <li class="classify_city">烟台</li>
+
+      <li class="classify_city">营口</li>
+
+      <li class="classify_city">伊春</li>
+
+      <li class="classify_city">运城</li>
+
+      <li class="classify_city">榆林</li>
+
+      <li class="classify_city">宜宾</li>
+
+      <li class="classify_city">永州</li>
+
+      <li class="classify_city">宜春</li>
+
+      <li class="classify_city">盐城</li>
+
+      <li class="classify_city">扬州</li>
+
+      <li class="classify_city">伊犁哈萨克自治州</li>
+
+      <li class="classify_city">益阳</li>
+
+      <li class="classify_city">雅安</li>
+
+      <li class="classify_city">阳江</li>
+
+      <li class="classify_city">云浮</li>
+
+    </ul>
+  </div>
+  <div class="cities" id="group-z">
+    <h3>Z</h3>
+    <ul class="city-list">
+
+      <li class="classify_city">郑州</li>
+
+      <li class="classify_city">株洲</li>
+
+      <li class="classify_city">自贡</li>
+
+      <li class="classify_city">珠海</li>
+
+      <li class="classify_city">淄博</li>
+
+      <li class="classify_city">遵义</li>
+
+      <li class="classify_city">枣庄</li>
+
+      <li class="classify_city">昭通</li>
+
+      <li class="classify_city">中卫</li>
+
+      <li class="classify_city">漳州</li>
+
+      <li class="classify_city">张掖</li>
+
+      <li class="classify_city">张家口</li>
+
+      <li class="classify_city">舟山</li>
+
+      <li class="classify_city">中山</li>
+
+      <li class="classify_city">张家界</li>
+
+      <li class="classify_city">镇江</li>
+
+      <li class="classify_city">肇庆</li>
+
+      <li class="classify_city">周口</li>
+
+      <li class="classify_city">驻马店</li>
+
+      <li class="classify_city">资阳</li>
+
+      <li class="classify_city">湛江</li>
+
+    </ul>
+  </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+  <header id="header">
+    <div class="sticky-wrapper">
+      <nav class="navbar navbar-default navbar-transparent" role="navigation" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav" id="navbar-nav">
+              <li id="position">
+                <a href="locate.html">
+                  <img src="img/citypoint.png" width="20" height="auto">
+                  <span id="showCity" style="margin-right:5px;color:#000">北京</span>
+                  <span id="city">切换城市</span>
+                </a>
+              </li>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="download.html">下载APP</a></li>
+              <li><a href="seller.html">服务商</a></li>
+              <li class="active"><a href="#">商家入驻</a></li>
+              <li><a href="about.html">关于我们</a></li>
+              <li class="shanghu-right" style="margin-right:10px;">
+                <a id="shanghu" class="shanghu" target="_blank" href="login.html">商家登录</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="j_content">
+    <div class="banner"></div>
+    <div class="info clear">
+      <div class="container">
+        <img src="http://www.daoway.cn/pcimages/information1.jpg">
+        <div class="info-detail">
+          <p class="info-title">
+            1.“互联网+”很美，但获取用户太贵？
+          </p>
+          <p>
+            到位平台累计用户量接近1000万，完全开放，供入驻商家免费共享
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="info left clear">
+      <div class="container">
+        <img src="http://www.daoway.cn/pcimages/information2.jpg">
+        <div class="info-detail">
+          <p class="info-title">
+            2、服务只覆盖少数地区，打广告太浪费？
+          </p>
+          <p>
+            按商家的服务区域定向展示，精准提升品牌，轻松获取高质量订单
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="info clear">
+      <div class="container">
+        <img src="http://www.daoway.cn/pcimages/information3.jpg">
+        <div class="info-detail">
+          <p class="info-title">
+            3、服务太低频，用户留存低、回头太难？
+          </p>
+          <p>
+            团结就是力量，低频+低频=高频，多种上门服务互推，回头客不难
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="info left clear">
+      <div class="container">
+        <img src="http://www.daoway.cn/pcimages/information4.jpg">
+        <div class="info-detail">
+          <p class="info-title">
+            4、渠道太分散，各种渠道推广费时费力？
+          </p>
+          <p>
+            入驻平台即加入“到位服务联盟”，直接让上数百个渠道帮您推广
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="info clear">
+      <div class="container">
+        <img src="http://www.daoway.cn/pcimages/information5.jpg">
+        <div class="info-detail">
+          <p class="info-title">
+            5、技术投入大、运营成本高、利润太低？
+          </p>
+          <p>
+            到位免费提供完善的O2O管理平台，无需技术投入，节约大量成本
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="j_form">
+      <p class="form-title">
+        提交<i>合作</i>信息
+      </p>
+      <form action="#">
+        <div class="input-group">
+          <label for="companyName">
+            <i>*</i>
+            公司名称 :
+          </label>
+          <input id="companyName" type="text" maxlength="30" placeholder="填写公司名称">
+        </div>
+        <div class="input-group">
+          <label for="companyName">
+            <i>*</i>
+            服务项目 :
+          </label>
+          <div class="checkbox-group">
+            <p>
+              <input type="checkbox" id="1" value="家庭保洁"><label for="1">家庭保洁</label>
+              <input type="checkbox" id="2" value="上门按摩"><label for="2">上门按摩</label>
+              <input type="checkbox" id="3" value="维修"><label for="3">维修</label>
+              <input type="checkbox" id="4" value="家电清洗"><label for="4">家电清洗</label>
+              <input type="checkbox" id="5" value="洗衣洗鞋"><label for="5">洗衣洗鞋</label>
+              <input type="checkbox" id="6" title="保姆月嫂"><label for="6">保姆月嫂</label>
+            </p>
+            <p>
+              <input type="checkbox" id="7" value="搬家"><label for="7">搬家</label>
+              <input type="checkbox" id="8" value="上门养车"><label for="8">上门养车</label>
+              <input type="checkbox" id="9" value="鲜花"><label for="9">鲜花</label>
+              <input type="checkbox" id="10" value="美容美体"><label for="10">美容美体</label>
+              <input style="width: 120px; height: 22px; line-height: 22px" type="text" id="note"><label for="note">其它</label>
+            </p>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="companyName">
+            <i>*</i>
+            联系电话 :
+          </label>
+          <input id="contactPhone" type="text" maxlength="30" placeholder="填写联系电话">
+        </div>
+        <div class="input-group">
+          <label for="contactName">
+            <i>*</i>
+            联系人 :
+          </label>
+          <input id="contactName" type="text" maxlength="30" placeholder="填写联系人">
+        </div>
+        <div class="input-group">
+          <label for="serviceCity">
+            <i>*</i>
+            服务覆盖城市 :
+          </label>
+          <input id="serviceCity" type="text" maxlength="30" placeholder="填写服务覆盖城市">
+        </div>
+        <div class="input-group">
+          <label for="dayOrders">
+            <i>*</i>
+            日接单能力 :
+          </label>
+          <input id="dayOrders" type="text" maxlength="30" placeholder="填写日接单能力（请填写数字不能有汉字）">
+        </div>
+        <div class="input-group">
+          <label for="apporoffieceid">
+            <i>*</i>
+            App/公众号 :
+          </label>
+          <input id="apporoffieceid" type="text" maxlength="30" placeholder="填写APP/公众账号">
+        </div>
+        <div class="input-group">
+          <label for="companyHref">
+            <i>*</i>
+            公司网址 :
+          </label>
+          <input id="companyHref" type="text" maxlength="30" placeholder="填写公司网址">
+        </div>
+        <input class="submit" type="submit" value="提交商户信息">
+      </form>
+      <p class="contact">招商电话：010-64522010 （工作时间：周一至周五 9:00 - 18:00 法定假日除外）</p>
+      <p>
+        <a href="http://www.daoway.com/dian/#/regist" target="_blank">自助注册开店</a>
+        》
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div class="ensure">
+      <h2>到位<i>服务</i>保障</h2>
+      <p>到位平台担保交易安全，交易未成功100%退款</p>
+    </div>
+    <div class="serve">
+      <ul>
+        <li><img src="img/quan.png"><br>服务多</li>
+        <li><img src="img/quan.png"><br>上门快</li>
+        <li><img src="img/quan.png"><br>有保障</li>
+      </ul>
+    </div>
+    <div class="city">
+      <!--定义列表：为一些定义做一些解释-->
+      <dl>
+        <dt>热门城市</dt>   <!--定义的内容-->
+        <dd>    <!--对定义的内容的描述-->
+          <i>北京</i><i>上海</i><i>广州</i><i>深圳</i><i>成都</i><i>天津</i>
+          <i>南京</i><i>杭州</i><i>重庆</i><i>苏州</i><i>武汉</i><i>长沙</i>
+          <i>济南</i><i>郑州</i><i>西安</i><i>沈阳</i><i>福州</i><i>厦门</i>
+          <i>南昌</i><i>合肥</i><i>宁波</i><i>无锡</i><i>青岛</i><i>大连</i>
+          <i>东莞</i><i>佛山</i><i>石家庄</i><i>哈尔滨</i><i>太原</i><i>昆明</i>
+          <i>贵阳</i><i>南宁</i><i>温州</i>
+        </dd>
+      </dl>
+    </div>
+    <div class="record">
+      <p>©2015 版权所有  到位 daoway.com 京ICP备15001471号-1</p>
+      <p>北京邻家科技有限公司  </p>
+    </div>
+  </footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

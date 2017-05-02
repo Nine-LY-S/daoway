@@ -1,0 +1,139 @@
+body .j_content .banner {
+  width: 100%;
+  height: 300px;
+  background: url(http://www.daoway.cn/pcimages/information.jpg) no-repeat center center;
+}
+body .j_content .info {
+  height: 300px;
+}
+body .j_content .info img {
+  margin: 60px;
+}
+body .j_content .info .info-detail {
+  float: right;
+  line-height: 60px;
+  padding-top: 100px;
+  margin-right: 150px;
+}
+body .j_content .info .info-detail p {
+  font-size: 22px;
+  margin-left: 55px;
+  color: #333;
+}
+body .j_content .info .info-detail .info-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+body .j_content .left {
+  background-color: #f8f8f8;
+}
+body .j_content .left .info-detail {
+  margin-right: 0px;
+  float: left;
+}
+body .j_content .left .info-detail p {
+  font-size: 22px;
+  color: #333;
+}
+body .j_content .j_form {
+  background-color: #f8f8f8;
+  padding: 110px 0 30px;
+  text-align: center;
+  font-size: 14px;
+}
+body .j_content .j_form .form-title {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+body .j_content .j_form .form-title i {
+  color: #e94840;
+  font-weight: bold;
+}
+body .j_content .j_form form {
+  font-size: 14px;
+  line-height: 46px;
+}
+body .j_content .j_form form .input-group {
+  width: 660px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body .j_content .j_form form .input-group > label {
+  width: 120px;
+  text-align: right;
+  float: left;
+}
+body .j_content .j_form form .input-group > label i {
+  color: #e94840;
+}
+body .j_content .j_form form .input-group input[type='text'] {
+  width: 500px;
+  padding-left: 15px;
+  line-height: 30px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  margin-left: 10px;
+  outline: none;
+}
+body .j_content .j_form form .input-group .checkbox-group {
+  float: left;
+  margin-left: 18px;
+  width: 500px;
+}
+body .j_content .j_form form .input-group .checkbox-group p {
+  text-align: justify;
+  font-size: 14px;
+}
+body .j_content .j_form form .input-group .checkbox-group p [type='checkbox'] {
+  font-size: 14px;
+  vertical-align: baseline;
+}
+body .j_content .j_form form .input-group .checkbox-group p label {
+  font-size: 14px;
+  margin: 0 7px;
+  font-weight: bold;
+}
+body .j_content .j_form form .input-group .checkbox-group p:last-child label:first-of-type {
+  margin-right: 34px;
+}
+body .j_content .j_form form .submit {
+  width: 126px;
+  background: #fb474f;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  margin-top: 30px;
+}
+body .j_content .j_form .contact {
+  color: #898989;
+  line-height: 40px;
+}
+body .j_content .j_form > p:last-of-type {
+  line-height: 40px;
+  color: #fb474f;
+}
+body .j_content .j_form > p:last-of-type a {
+  color: #fb474f;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clear:after,
+.clear:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}

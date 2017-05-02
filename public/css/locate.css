@@ -1,0 +1,97 @@
+body > .container {
+  font-size: 16px;
+}
+body > .container .city-nav {
+  height: 265px;
+  background: #fff;
+  position: fixed;
+  width: 1200px;
+  margin: 0 auto;
+  top: 72px;
+  left: 0;
+  right: 0;
+}
+body > .container .city-nav .hot-city {
+  margin-top: 40px;
+  font-size: 16px;
+}
+body > .container .city-nav .hot-city h3 {
+  color: #929292;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+body > .container .city-nav .hot-city .hot-city-list {
+  background-color: #f8f8f8;
+  letter-spacing: 0;
+}
+body > .container .city-nav .hot-city .hot-city-list li {
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 11px 0 12px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+body > .container .city-nav .city-select {
+  margin-top: 40px;
+}
+body > .container .city-nav .city-select h3 {
+  margin: 20px 0 10px;
+  color: #929292;
+  font-size: 16px;
+  font-weight: 600;
+}
+body > .container .city-nav .city-select .letter-list li {
+  line-height: 40px;
+  width: 3%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.5%;
+}
+body > .container .city-nav .city-select .letter-list li.selected {
+  color: #fff;
+  height: 24px;
+  line-height: 24px;
+  background: #fb474f;
+}
+body > .container .nav-holder {
+  height: 300px;
+}
+body > .container .cities {
+  margin: 40px 0 0;
+}
+body > .container .cities h3 {
+  margin: 20px 0 10px;
+  color: #929292;
+  font-size: 16px;
+  font-weight: 600;
+}
+body > .container .cities .city-list {
+  background: #f8f8f8;
+}
+body > .container .cities .city-list li {
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0 11px 0 12px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+}
+a {
+  color: #000;
+  font-weight: bold;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clear:after,
+.clear:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
