@@ -1,0 +1,10 @@
+{
+  "_id" : ObjectId("5901efbbc2d75710e0845993"),
+  "sellerID" : 1,
+  "username" : "小雨45",
+  "score" : 5,
+  "rateTime" : NumberLong("1469281964000"),
+  "text" : "不错",
+  "address" : "北京 朝阳区",
+  "avatar" : "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
+}
